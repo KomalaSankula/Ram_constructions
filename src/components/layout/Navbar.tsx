@@ -20,7 +20,7 @@ export default function Navbar() {
   const isTransparent = isHome2 && !isScrolled
   const isAnyHome = location.pathname === '/' || location.pathname === '/home-2'
 
-  const sectionIds = ['home', 'about', 'services', 'projects', 'commercial-projects', 'gallery', 'blog', 'contact']
+  const sectionIds = ['home', 'about', 'services', 'projects', 'commercial-projects', 'contact']
   const activeSection = useScrollSpy(sectionIds, 160)
 
   useEffect(() => {

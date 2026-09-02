@@ -5,10 +5,8 @@ import ServicesPreview from '../../components/home/ServicesPreview'
 import ProjectsPreview from '../../components/home/ProjectsPreview'
 import WhyChooseUs from '../../components/home/WhyChooseUs'
 import Testimonials from '../../components/home/Testimonials'
-import GalleryPreview from '../../components/home/GalleryPreview'
 import ProcessSection from '../../components/home/ProcessSection'
 import TeamSection from '../../components/home/TeamSection'
-import BlogPreview from '../../components/home/BlogPreview'
 import ContactSection from '../../components/home/ContactSection'
 
 export default function Home() {
@@ -26,17 +24,14 @@ export default function Home() {
       {/* 04. Our Services */}
       <ServicesPreview />
 
-      {/* 04. Projects */}
+      {/* 05. Projects */}
       <ProjectsPreview />
 
-      {/* 05. Why Choose Us */}
+      {/* 06. Why Choose Us */}
       <WhyChooseUs />
 
-      {/* 06. Testimonials */}
+      {/* 07. Testimonials */}
       <Testimonials />
-
-      {/* 07. Gallery */}
-      <GalleryPreview />
 
       {/* 08. Our Process */}
       <ProcessSection />
@@ -44,10 +39,7 @@ export default function Home() {
       {/* 09. Our Team */}
       <TeamSection />
 
-      {/* 10. Blog / News */}
-      <BlogPreview />
-
-      {/* 11. Contact Us */}
+      {/* 10. Contact Us */}
       <ContactSection />
     </>
   )
