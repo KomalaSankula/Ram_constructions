@@ -146,8 +146,13 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-          <div>
-            © {new Date().getFullYear()} {companyDetails.name}. All Rights Reserved.
+          <div className="text-center sm:text-left">
+            <div>
+              © {new Date().getFullYear()} {companyDetails.name}. All Rights Reserved.
+            </div>
+            <div className="mt-1 text-[11px] text-slate-400">
+              Created by <span className="font-semibold text-slate-200">Sunseaz Pvt Limited</span>
+            </div>
           </div>
 
           <div className="flex items-center gap-6">
