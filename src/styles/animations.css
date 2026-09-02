@@ -1,0 +1,64 @@
+/* Blueprint dot pattern matching logo colors */
+.blueprint-dots {
+  background-image: radial-gradient(#1a6db2 1.2px, transparent 1.2px);
+  background-size: 14px 14px;
+  opacity: 0.15;
+}
+
+.blueprint-grid {
+  background-image: linear-gradient(to right, rgba(7, 43, 88, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(7, 43, 88, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Glassmorphism surfaces */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-panel-dark {
+  background: rgba(7, 43, 88, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #edfaff;
+}
+::-webkit-scrollbar-thumb {
+  background: #123d66;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0d55c8;
+}
+
+/* Infinite Marquee Animation */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-infinite {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-infinite:hover {
+  animation-play-state: paused;
+}
+

@@ -1,0 +1,56 @@
+import type { BlogPost } from '../types/blog.types'
+
+export const blogPosts: BlogPost[] = [
+  {
+    id: 'top-5-construction-trends-2024',
+    title: 'Top 5 Construction Trends in 2024',
+    slug: 'top-5-construction-trends-in-2024',
+    date: 'May 10, 2024',
+    author: 'Admin',
+    readTime: '4 min read',
+    category: 'Industry Insights',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80',
+    summary: 'The construction industry is constantly evolving with new trends shaping the future. In this article, we explore the top 5 construction trends to watch in 2024.',
+    content: [
+      'The construction industry is experiencing an unprecedented transformation driven by digital technology, sustainable materials, and modular techniques. As we move through 2024, homeowners and commercial developers are demanding buildings that are not only aesthetically striking, but energy-efficient and long-lasting.',
+      '1. Sustainable & Low-Carbon Concrete: Traditional cement production accounts for significant carbon emissions. Innovative builders are adopting fly-ash blends and geopolymer mixes that reduce carbon footprint by up to 40% while enhancing structural strength.',
+      '2. Smart Building Automation: Homes are now designed with integrated IoT ecosystems from the ground up, controlling ambient lighting, HVAC zones, motorized blinds, and water filtration through central touchscreens and mobile devices.',
+      '3. Prefabricated & Off-Site Components: Precision factory manufacturing of steel frames, bathroom pods, and modular wall assemblies drastically cuts on-site construction schedules without sacrificing build tolerance.',
+      '4. Biophilic Architecture: Bringing nature indoors through central light-wells, courtyard water bodies, and vertical gardens has become a staple of modern luxury villas.',
+      '5. 3D Architectural Visualization & Digital Twins: Before a single shovel touches the soil, clients can walk through photo-realistic virtual reality tours of their future spaces, eliminating change orders and delays.',
+    ],
+  },
+  {
+    id: 'how-to-choose-the-right-builder',
+    title: 'How to Choose the Right Builder',
+    slug: 'how-to-choose-the-right-builder',
+    date: 'Apr 28, 2024',
+    author: 'Arun Kumar',
+    readTime: '6 min read',
+    category: 'Home Building Guide',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
+    summary: 'Selecting the right general contractor is the most critical decision in your construction journey. Here are the top criteria to evaluate before signing.',
+    content: [
+      'Building your dream home is both an emotional milestone and one of the largest financial investments of your life. Choosing the right construction partner can mean the difference between a smooth, joyful journey and months of stressful delays and budget creep.',
+      'Always verify licensing, insurance, and past site handovers in person. Request to visit active construction sites to inspect structural cleanliness, safety gear compliance, and material storage standards.',
+      'Demand transparent, itemized Bill of Quantities (BOQ). A trustworthy builder specifies exact brands of steel, cement grade, electrical cabling, and plumbing fixtures rather than vague lump sums.',
+      'At RAM Construction, we believe total transparency and milestone-based escrow payments build the strongest foundation for enduring client relationships.',
+    ],
+  },
+  {
+    id: 'benefits-of-sustainable-building',
+    title: 'Benefits of Sustainable Building',
+    slug: 'benefits-of-sustainable-building',
+    date: 'Apr 15, 2024',
+    author: 'Priya Sharma',
+    readTime: '5 min read',
+    category: 'Architecture',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+    summary: 'Discover how eco-friendly architecture and green building practices cut lifetime utility expenses while creating healthier indoor living environments.',
+    content: [
+      'Sustainable construction is no longer a niche luxury; it is the modern benchmark of intelligent design. By integrating passive solar orientation, rainwater percolation pits, and thermally insulated wall envelopes, buildings stay naturally cooler in summer and warmer in winter.',
+      'Homeowners who invest in green building standards report up to 35% savings on electricity and water bills annually, while enjoying cleaner indoor air free from volatile organic compounds (VOCs).',
+      'RAM Construction incorporates green construction principles in all residential and commercial portfolios across Hyderabad and Telangana.',
+    ],
+  },
+]

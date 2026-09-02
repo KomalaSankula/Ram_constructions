@@ -1,0 +1,56 @@
+@import './animations.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-dark: #072b58;
+  --brand-navy: #072b58;
+  --brand-primary: #1a6db2;
+  --brand-overlay: rgb(26 109 178 / 50%);
+  --brand-sky: #39a1d6;
+  --brand-accent: #39a1d6;
+  --brand-surface: #ffffff;
+
+  font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
+  color: var(--brand-navy);
+  background: var(--brand-surface);
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: rgb(26 109 178 / 50%);
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #ffffff;
+  color: var(--brand-navy);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button,
+a {
+  transition: all 0.2s ease;
+}
+
+@layer components {
+  .site-section {
+    @apply relative py-6 sm:py-8 md:py-9;
+  }
+
+  .site-section-soft {
+    @apply relative py-6 sm:py-8 md:py-9 bg-[#f8fafc];
+  }
+}
