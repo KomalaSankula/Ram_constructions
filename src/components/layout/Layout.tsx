@@ -13,7 +13,7 @@ export default function Layout() {
 
   return (
     <ModalProvider>
-      <div className="min-h-screen bg-[#f8fafc] text-slate-800 flex flex-col justify-between selection:bg-[#0d55c8] selection:text-white">
+      <div className="min-h-screen bg-white text-slate-800 flex flex-col justify-between selection:bg-[#1ea6dc] selection:text-white">
         <Navbar />
         <main className="flex-1">
           <Outlet />

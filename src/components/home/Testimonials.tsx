@@ -72,26 +72,26 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="site-section-soft relative overflow-hidden">
       {/* Decorative Subtle Background Ambient Glow */}
-      <div className="pointer-events-none absolute -top-24 -left-20 h-96 w-96 rounded-full bg-[#edf5fd]/60 blur-3xl select-none" />
+      <div className="pointer-events-none absolute -top-24 -left-20 h-96 w-96 rounded-full bg-[#f0f9ff]/70 blur-3xl select-none" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] xl:grid-cols-[300px_1fr] gap-6 lg:gap-8 items-start">
           {/* Left Column: Badge, Heading, Description & Controls */}
           <div className="flex flex-col justify-start">
             {/* Prominent Circular Quote Icon Badge - Properly Contained */}
-            <div className="mb-4 inline-flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-[#edf5fd] text-[#0d55c8] ring-1 ring-[#0d55c8]/20 shadow-sm transition-transform hover:scale-105">
-              <Quote className="h-7 w-7 sm:h-8 sm:w-8 text-[#0d55c8] fill-[#0d55c8]/25" />
+            <div className="mb-4 inline-flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-[#f0f9ff] text-[#1ea6dc] ring-1 ring-[#1ea6dc]/25 shadow-sm transition-transform hover:scale-105">
+              <Quote className="h-7 w-7 sm:h-8 sm:w-8 text-[#1ea6dc] fill-[#1ea6dc]/25" />
             </div>
 
-            <span className="text-xs font-black uppercase tracking-[0.25em] text-[#0d55c8]">
+            <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#1ea6dc]">
               Client Testimonials
             </span>
 
-            <h2 className="mt-3 text-3xl sm:text-4xl lg:text-[42px] font-black tracking-tight text-[#072b58] leading-[1.15]">
+            <h2 className="mt-2.5 text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-[#072b58] leading-tight">
               Connect with<br />Our Happy Clients
             </h2>
 
-            <p className="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed">
+            <p className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
               Discover why homeowners, commercial developers, and property investors in Telangana trust RAM Construction for landmark projects delivered with excellence.
             </p>
 
@@ -99,7 +99,7 @@ export default function Testimonials() {
             <div className="mt-5 flex items-center gap-2.5">
               <div className="flex items-center gap-0.5">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-[#0d55c8] text-[#0d55c8]" />
+                  <Star key={i} className="h-4 w-4 fill-[#1ea6dc] text-[#1ea6dc]" />
                 ))}
               </div>
               <span className="text-xs font-bold text-slate-700">
@@ -115,10 +115,10 @@ export default function Testimonials() {
                   e.preventDefault()
                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
                 }}
-                className="group inline-flex items-center gap-2 text-xs sm:text-sm font-black uppercase tracking-wider text-[#0d55c8] hover:text-[#072b58] transition cursor-pointer"
+                className="group inline-flex items-center gap-2 text-xs sm:text-sm font-black uppercase tracking-wider text-[#1ea6dc] hover:text-[#072b58] transition cursor-pointer"
               >
                 <span>CONNECT NOW</span>
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#edf5fd] text-[#0d55c8] transition-transform group-hover:translate-x-1 group-hover:bg-[#0d55c8] group-hover:text-white shadow-sm">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#f0f9ff] text-[#1ea6dc] transition-transform group-hover:translate-x-1 group-hover:bg-[#1ea6dc] group-hover:text-white shadow-sm">
                   <ArrowRight className="h-3 w-3" />
                 </span>
               </a>
@@ -129,14 +129,14 @@ export default function Testimonials() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={handlePrev}
-                  className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full bg-[#edf5fd] text-[#072b58] ring-1 ring-slate-200/80 transition-all hover:bg-[#0d55c8] hover:text-white hover:scale-105 active:scale-95 shadow-sm"
+                  className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full bg-[#f0f9ff] text-[#072b58] ring-1 ring-slate-200/80 transition-all hover:bg-[#1ea6dc] hover:text-white hover:scale-105 active:scale-95 shadow-sm"
                   aria-label="Previous testimonial"
                 >
                   <ChevronLeft className="h-5 w-5" />
                 </button>
                 <button
                   onClick={handleNext}
-                  className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full bg-[#edf5fd] text-[#072b58] ring-1 ring-slate-200/80 transition-all hover:bg-[#0d55c8] hover:text-white hover:scale-105 active:scale-95 shadow-sm"
+                  className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full bg-[#f0f9ff] text-[#072b58] ring-1 ring-slate-200/80 transition-all hover:bg-[#1ea6dc] hover:text-white hover:scale-105 active:scale-95 shadow-sm"
                   aria-label="Next testimonial"
                 >
                   <ChevronRight className="h-5 w-5" />
@@ -150,7 +150,7 @@ export default function Testimonials() {
                     key={i}
                     onClick={() => setCurrentIndex(i)}
                     className={`h-2 rounded-full transition-all duration-300 ${
-                      currentIndex === i ? 'w-6 bg-[#0d55c8] shadow-sm shadow-[rgb(26_109_178/0.5)]' : 'w-2 bg-slate-200 hover:bg-slate-300'
+                      currentIndex === i ? 'w-6 bg-[#1ea6dc] shadow-sm shadow-[#1ea6dc]/30' : 'w-2 bg-slate-200 hover:bg-slate-300'
                     }`}
                     aria-label={`Go to slide ${i + 1}`}
                   />
@@ -179,7 +179,7 @@ export default function Testimonials() {
                   key={item.id}
                   className="shrink-0 w-full sm:w-1/2 lg:w-1/3 px-2 sm:px-2.5"
                 >
-                  <div className="flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-card ring-1 ring-slate-200/80 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-elevated hover:ring-[rgb(26_109_178/0.5)]">
+                  <div className="flex flex-col h-full overflow-hidden rounded-2xl bg-white shadow-card ring-1 ring-slate-200/80 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-elevated hover:ring-[#1ea6dc]/40">
                     {/* Top Half of Card: Client Photo */}
                     <div className="relative h-48 sm:h-52 lg:h-56 w-full overflow-hidden bg-slate-100">
                       <img
@@ -192,12 +192,12 @@ export default function Testimonials() {
 
                     {/* Overlapping Circular Blue Quote Badge & Verified Badge */}
                     <div className="relative -mt-5 ml-4 sm:ml-5 z-10 flex items-center justify-between pr-4 sm:pr-5">
-                      <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-[#0d55c8] text-white shadow-md ring-4 ring-white">
+                      <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-[#1ea6dc] text-white shadow-md ring-4 ring-white">
                         <Quote className="h-3.5 w-3.5 sm:h-4 sm:w-4 fill-white text-white" />
                       </div>
 
-                      <span className="inline-flex items-center gap-1 rounded-full bg-[#edf5fd] px-2.5 py-1 text-[10px] sm:text-[11px] font-bold text-[#0d55c8] shadow-sm ring-1 ring-[#0d55c8]/20 backdrop-blur-sm">
-                        <CheckCircle2 className="h-3 w-3 text-[#0d55c8]" />
+                      <span className="inline-flex items-center gap-1 rounded-full bg-[#f0f9ff] px-2.5 py-1 text-[10px] sm:text-[11px] font-bold text-[#1ea6dc] shadow-sm ring-1 ring-[#1ea6dc]/25 backdrop-blur-sm">
+                        <CheckCircle2 className="h-3 w-3 text-[#1ea6dc]" />
                         Verified Client
                       </span>
                     </div>
@@ -208,7 +208,7 @@ export default function Testimonials() {
                         {/* 5-Star Rating */}
                         <div className="flex items-center gap-1 mb-2">
                           {Array.from({ length: item.rating || 5 }).map((_, s) => (
-                            <Star key={s} className="h-3 w-3 sm:h-3.5 sm:w-3.5 fill-[#0d55c8] text-[#0d55c8]" />
+                            <Star key={s} className="h-3 w-3 sm:h-3.5 sm:w-3.5 fill-[#1ea6dc] text-[#1ea6dc]" />
                           ))}
                           <span className="ml-1 text-xs font-bold text-slate-500">5.0</span>
                         </div>
@@ -219,10 +219,10 @@ export default function Testimonials() {
                       </div>
 
                       <div className="mt-4 pt-3 border-t border-slate-100">
-                        <h3 className="text-sm sm:text-base font-black text-[#072b58] leading-tight">
+                        <h3 className="text-sm sm:text-base font-bold text-[#072b58] leading-tight">
                           {item.name}
                         </h3>
-                        <p className="text-xs font-semibold text-[#0d55c8] mt-0.5">
+                        <p className="text-xs font-semibold text-[#1ea6dc] mt-0.5">
                           {item.role}
                         </p>
                         {item.company && (

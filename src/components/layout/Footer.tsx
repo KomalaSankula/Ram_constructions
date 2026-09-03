@@ -49,28 +49,28 @@ export default function Footer() {
             <div className="mt-6 flex items-center gap-3">
               <a
                 href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#0d55c8] hover:scale-110"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#1ea6dc] hover:scale-110"
                 aria-label="Facebook"
               >
                 <FacebookIcon className="h-4 w-4" />
               </a>
               <a
                 href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#0d55c8] hover:scale-110"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#1ea6dc] hover:scale-110"
                 aria-label="LinkedIn"
               >
                 <LinkedinIcon className="h-4 w-4" />
               </a>
               <a
                 href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#0d55c8] hover:scale-110"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#1ea6dc] hover:scale-110"
                 aria-label="Twitter"
               >
                 <TwitterIcon className="h-4 w-4" />
               </a>
               <a
                 href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#0d55c8] hover:scale-110"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#1ea6dc] hover:scale-110"
                 aria-label="Instagram"
               >
                 <InstagramIcon className="h-4 w-4" />
@@ -151,7 +151,7 @@ export default function Footer() {
               © {new Date().getFullYear()} {companyDetails.name}. All Rights Reserved.
             </div>
             <div className="mt-1 text-[11px] text-slate-400">
-              Created by <span className="font-semibold text-slate-200">Sunseaz Pvt Limited</span>
+              Created by <span className="font-semibold text-slate-200">Sunseaz Technology Pvt. Ltd.</span>
             </div>
           </div>
 
@@ -160,7 +160,7 @@ export default function Footer() {
             <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="hover:text-white cursor-pointer">Terms & Conditions</a>
             <button
               onClick={scrollToTop}
-              className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#0d55c8]"
+              className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#1ea6dc]"
               aria-label="Scroll to top"
             >
               <ArrowUp className="h-4 w-4" />

@@ -7,24 +7,3 @@ export const navItems: NavItem[] = [
   { name: 'Projects', href: '#projects', path: '/projects' },
   { name: 'Contact', href: '#contact', path: '/contact' },
 ]
-
-export const homeVariations = [
-  {
-    id: 'home-01',
-    name: 'Home 01',
-    path: '/',
-    label: 'Residential Villa',
-  },
-  {
-    id: 'home-02',
-    name: 'Home 02',
-    path: '/home-2',
-    label: 'Commercial Skyline',
-  },
-  {
-    id: 'home-03',
-    name: 'Home 03',
-    path: '/home-2#commercial-projects',
-    label: 'Landmark Portfolio',
-  },
-]

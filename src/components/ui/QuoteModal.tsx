@@ -57,10 +57,10 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
       <div className="relative z-10 w-full max-w-xl rounded-3xl bg-white p-6 shadow-2xl ring-1 ring-slate-200 md:p-8">
         <div className="flex items-center justify-between border-b border-slate-100 pb-4">
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#1a6db2]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#1ea6dc]">
               Inquiry & Estimation
             </span>
-            <h3 className="text-2xl font-black text-[#123d66]">
+            <h3 className="text-2xl font-black text-[#072b58]">
               {step === 4 ? 'Quote Request Received!' : 'Request a Project Quote'}
             </h3>
           </div>
@@ -80,9 +80,9 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
                 <div
                   className={`flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold ${
                     step === num
-                      ? 'bg-[#1a6db2] text-white ring-4 ring-[#1a6db2]/20'
+                      ? 'bg-[#1ea6dc] text-white ring-4 ring-[#1ea6dc]/20'
                       : step > num
-                      ? 'bg-[#123d66] text-white'
+                      ? 'bg-[#072b58] text-white'
                       : 'bg-slate-100 text-slate-400'
                   }`}
                 >
@@ -115,13 +115,13 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
                     onClick={() => setProjectType(item.name)}
                     className={`flex items-start gap-4 rounded-2xl p-4 text-left transition border ${
                       isSelected
-                        ? 'border-[#1a6db2] bg-[#edfaff] ring-2 ring-[#1a6db2]/20'
+                        ? 'border-[#1ea6dc] bg-[#f0f9ff] ring-2 ring-[#1ea6dc]/20'
                         : 'border-slate-200 bg-white hover:bg-slate-50'
                     }`}
                   >
                     <div
                       className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl ${
-                        isSelected ? 'bg-[#1a6db2] text-white' : 'bg-slate-100 text-slate-600'
+                        isSelected ? 'bg-[#1ea6dc] text-white' : 'bg-slate-100 text-slate-600'
                       }`}
                     >
                       <Icon className="h-5 w-5" />
@@ -139,7 +139,7 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
               <button
                 type="button"
                 onClick={() => setStep(2)}
-                className="flex items-center gap-2 rounded-full bg-[#1a6db2] px-6 py-2.5 text-sm font-bold text-white shadow-md shadow-[#1a6db2]/20 hover:bg-[#145290]"
+                className="flex items-center gap-2 rounded-full bg-[#1ea6dc] px-6 py-2.5 text-sm font-bold text-white shadow-md shadow-[#1ea6dc]/20 hover:bg-[#072b58]"
               >
                 <span>Continue to Specifications</span>
                 <ArrowRight className="h-4 w-4" />
@@ -159,7 +159,7 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
                 placeholder="e.g. Jubilee Hills, Hyderabad"
-                className="mt-1.5 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-800 focus:border-[#1a6db2] focus:outline-none"
+                className="mt-1.5 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-800 focus:border-[#1ea6dc] focus:outline-none"
               />
             </div>
 
@@ -172,7 +172,7 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
                 value={area}
                 onChange={(e) => setArea(e.target.value)}
                 placeholder="3000"
-                className="mt-1.5 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-800 focus:border-[#1a6db2] focus:outline-none"
+                className="mt-1.5 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-800 focus:border-[#1ea6dc] focus:outline-none"
               />
             </div>
 
@@ -183,7 +183,7 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
               <select
                 value={budget}
                 onChange={(e) => setBudget(e.target.value)}
-                className="mt-1.5 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-800 focus:border-[#1a6db2] focus:outline-none"
+                className="mt-1.5 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-800 focus:border-[#1ea6dc] focus:outline-none"
               >
                 <option value="₹25 Lakhs - ₹50 Lakhs">₹25 Lakhs - ₹50 Lakhs</option>
                 <option value="₹50 Lakhs - ₹1 Crore">₹50 Lakhs - ₹1 Crore</option>
@@ -204,7 +204,7 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
               <button
                 type="button"
                 onClick={() => setStep(3)}
-                className="flex items-center gap-2 rounded-full bg-[#1a6db2] px-6 py-2.5 text-sm font-bold text-white shadow-md shadow-[#1a6db2]/20 hover:bg-[#145290]"
+                className="flex items-center gap-2 rounded-full bg-[#1ea6dc] px-6 py-2.5 text-sm font-bold text-white shadow-md shadow-[#1ea6dc]/20 hover:bg-[#072b58]"
               >
                 <span>Continue to Details</span>
                 <ArrowRight className="h-4 w-4" />
@@ -225,7 +225,7 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="e.g. Rahul Varma"
-                className="mt-1.5 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-800 focus:border-[#1a6db2] focus:outline-none"
+                className="mt-1.5 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-800 focus:border-[#1ea6dc] focus:outline-none"
               />
             </div>
 
@@ -240,7 +240,7 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="+91 98765 43210"
-                  className="mt-1.5 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-800 focus:border-[#1a6db2] focus:outline-none"
+                  className="mt-1.5 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-800 focus:border-[#1ea6dc] focus:outline-none"
                 />
               </div>
               <div>
@@ -253,7 +253,7 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="rahul@example.com"
-                  className="mt-1.5 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-800 focus:border-[#1a6db2] focus:outline-none"
+                  className="mt-1.5 w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-800 focus:border-[#1ea6dc] focus:outline-none"
                 />
               </div>
             </div>
@@ -267,7 +267,7 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Tell us about your timeline, architectural style preference, or plot status..."
-                className="mt-1.5 w-full rounded-xl border border-slate-200 p-3 text-sm font-medium text-slate-800 focus:border-[#1a6db2] focus:outline-none"
+                className="mt-1.5 w-full rounded-xl border border-slate-200 p-3 text-sm font-medium text-slate-800 focus:border-[#1ea6dc] focus:outline-none"
               />
             </div>
 
@@ -282,7 +282,7 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="flex items-center gap-2 rounded-full bg-[#1a6db2] px-7 py-3 text-sm font-bold text-white shadow-md shadow-[#1a6db2]/20 hover:bg-[#145290] disabled:opacity-50"
+                className="flex items-center gap-2 rounded-full bg-[#1ea6dc] px-7 py-3 text-sm font-bold text-white shadow-md shadow-[#1ea6dc]/20 hover:bg-[#072b58] disabled:opacity-50"
               >
                 {isSubmitting ? (
                   <span>Submitting Request...</span>
@@ -299,16 +299,16 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
 
         {step === 4 && (
           <div className="mt-6 text-center py-6">
-            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#edfaff] text-[#1a6db2]">
+            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#f0f9ff] text-[#1ea6dc]">
               <CheckCircle2 className="h-9 w-9" />
             </div>
-            <h4 className="mt-4 text-xl font-bold text-[#123d66]">
+            <h4 className="mt-4 text-xl font-bold text-[#072b58]">
               Thank You, {name || 'Valued Client'}!
             </h4>
             <p className="mt-2 text-sm text-slate-600">
               Your inquiry has been registered under reference ticket:
             </p>
-            <div className="mt-2 inline-block rounded-xl bg-slate-100 px-4 py-2 text-base font-mono font-bold text-[#123d66]">
+            <div className="mt-2 inline-block rounded-xl bg-slate-100 px-4 py-2 text-base font-mono font-bold text-[#072b58]">
               {inquiryId}
             </div>
             <p className="mt-4 text-xs text-slate-500 max-w-sm mx-auto">
@@ -316,7 +316,7 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
             </p>
             <button
               onClick={handleReset}
-              className="mt-6 rounded-full bg-[#1a6db2] px-8 py-2.5 text-sm font-bold text-white hover:bg-[#145290]"
+              className="mt-6 rounded-full bg-[#1ea6dc] px-8 py-2.5 text-sm font-bold text-white hover:bg-[#072b58]"
             >
               Done
             </button>

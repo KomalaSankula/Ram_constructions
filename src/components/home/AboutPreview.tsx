@@ -57,8 +57,8 @@ export default function AboutPreview() {
             </div>
 
             {/* Floating Experience Badge */}
-            <div className="absolute -bottom-2 left-6 sm:left-10 z-20 flex items-center gap-3 rounded-2xl bg-white/95 px-4 py-3 shadow-xl ring-1 ring-[rgb(26_109_178/0.5)] backdrop-blur-sm">
-              <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl bg-[#edf5fd] text-[#0d55c8] ring-1 ring-[#0d55c8]/20 font-black text-lg">
+            <div className="absolute -bottom-2 left-6 sm:left-10 z-20 flex items-center gap-3 rounded-2xl bg-white/95 px-4 py-3 shadow-xl ring-1 ring-[#1ea6dc]/30 backdrop-blur-sm">
+              <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl bg-[#f0f9ff] text-[#1ea6dc] ring-1 ring-[#1ea6dc]/25 font-black text-lg">
                 12+
               </div>
               <div>
@@ -72,28 +72,28 @@ export default function AboutPreview() {
           <div className="flex flex-col justify-center">
             {/* Pill Badge at the top */}
             <div>
-              <div className="inline-flex items-center gap-2 rounded-full bg-[#edf5fd] border border-[rgb(26_109_178/0.5)] px-4 py-1.5 text-xs font-black uppercase tracking-[0.2em] text-[#0d55c8]">
-                <span className="h-2 w-2 rounded-full bg-[#0d55c8] animate-pulse" />
+              <div className="inline-flex items-center gap-2 rounded-full bg-[#f0f9ff] border border-[#1ea6dc]/40 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.18em] text-[#1ea6dc]">
+                <span className="h-2 w-2 rounded-full bg-[#1ea6dc] animate-pulse" />
                 ABOUT COMPANY
               </div>
             </div>
 
             {/* Main Headline */}
-            <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[#072b58] leading-[1.15]">
+            <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-[#072b58] leading-tight">
               Bringing Innovation &<br />New Ideas In Construction
             </h2>
 
             {/* Narrative Paragraph */}
-            <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed">
+            <p className="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed">
               We are RAM Construction, as a premier construction company we are serving over a decade with our tremendous skill and excellence in residential, commercial, and structural engineering.
             </p>
 
             {/* 2-Column Checklist */}
-            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div className="mt-7 grid grid-cols-1 gap-3.5 sm:grid-cols-2">
               {checklist.map((item, index) => (
                 <div key={index} className="flex items-center gap-2.5">
-                  <CheckCircle2 className="h-5 w-5 text-[#0d55c8] shrink-0" />
-                  <span className="text-sm sm:text-base font-bold text-slate-700">{item}</span>
+                  <CheckCircle2 className="h-4 w-4 text-[#1ea6dc] shrink-0" />
+                  <span className="text-sm font-semibold text-slate-700">{item}</span>
                 </div>
               ))}
             </div>
@@ -106,7 +106,7 @@ export default function AboutPreview() {
                   e.preventDefault()
                   document.getElementById('why-us')?.scrollIntoView({ behavior: 'smooth' })
                 }}
-                className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[#072b58] to-[#0d55c8] px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#0d55c8]/25 transition-all hover:shadow-xl hover:scale-105 active:scale-95 cursor-pointer"
+                className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[#072b58] to-[#1ea6dc] px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#1ea6dc]/25 transition-all hover:shadow-xl hover:scale-105 active:scale-95 cursor-pointer"
               >
                 <span>More About Us</span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -114,12 +114,12 @@ export default function AboutPreview() {
 
               <a
                 href={`tel:${companyDetails.phone}`}
-                className="inline-flex items-center gap-3 text-slate-700 transition hover:text-[#0d55c8] group"
+                className="inline-flex items-center gap-3 text-slate-700 transition hover:text-[#1ea6dc] group"
               >
-                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white ring-1 ring-slate-200 shadow-sm text-[#0d55c8] transition group-hover:bg-[#0d55c8] group-hover:text-white group-hover:scale-105">
+                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white ring-1 ring-slate-200 shadow-sm text-[#1ea6dc] transition group-hover:bg-[#1ea6dc] group-hover:text-white group-hover:scale-105">
                   <PhoneCall className="h-5 w-5" />
                 </div>
-                <span className="text-base sm:text-lg font-black text-[#072b58] group-hover:text-[#0d55c8]">
+                <span className="text-sm sm:text-base font-bold text-[#072b58] group-hover:text-[#1ea6dc]">
                   {companyDetails.phone}
                 </span>
               </a>

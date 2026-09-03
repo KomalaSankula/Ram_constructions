@@ -21,13 +21,13 @@ export default function GalleryPreview() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
-          <span className="text-xs font-extrabold uppercase tracking-[0.28em] text-[#0d55c8]">
+          <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#1ea6dc]">
             Our Gallery
           </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[#072b58]">
+          <h2 className="mt-2.5 text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-[#072b58]">
             Moments of Our Work
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-600">
+          <p className="mt-3 text-sm sm:text-base text-slate-600">
             A visual retrospective of our structural milestones, groundbreaking ceremonies, and bespoke finishes.
           </p>
         </div>
@@ -37,10 +37,10 @@ export default function GalleryPreview() {
             <button
               key={tab}
               onClick={() => setActiveFilter(tab)}
-              className={`rounded-full px-6 py-2 text-sm font-bold transition-all duration-200 ${
+              className={`rounded-full px-5 py-2 text-xs sm:text-sm font-bold transition-all duration-200 ${
                 activeFilter === tab
-                  ? 'bg-[#0d55c8] text-white shadow-md shadow-[#0d55c8]/25 scale-105'
-                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900'
+                  ? 'bg-[#1ea6dc] text-white shadow-md shadow-[#1ea6dc]/30 scale-105'
+                  : 'bg-slate-100 text-slate-600 hover:bg-[#f0f9ff] hover:text-[#1ea6dc]'
               }`}
             >
               {tab}
@@ -53,7 +53,7 @@ export default function GalleryPreview() {
             <div
               key={photo.id}
               onClick={() => openLightbox(filteredPhotos, index)}
-              className="group relative cursor-pointer overflow-hidden rounded-[24px] bg-slate-200 shadow-card ring-1 ring-slate-200/80 transition-all duration-500 hover:-translate-1.5 hover:shadow-elevated hover:ring-[#0d55c8]/30"
+              className="group relative cursor-pointer overflow-hidden rounded-[24px] bg-slate-200 shadow-card ring-1 ring-slate-200/80 transition-all duration-500 hover:-translate-1.5 hover:shadow-elevated hover:ring-[#1ea6dc]/30"
             >
               <div className="relative h-64 sm:h-72 w-full overflow-hidden">
                 <img
@@ -67,16 +67,16 @@ export default function GalleryPreview() {
 
                 <div className="absolute inset-0 flex flex-col justify-between p-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div className="flex justify-end">
-                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-[#0d55c8] shadow-md backdrop-blur-sm">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-[#1ea6dc] shadow-md backdrop-blur-sm">
                       <Maximize2 className="h-4 w-4" />
                     </span>
                   </div>
 
                   <div>
-                    <span className="text-xs font-bold uppercase tracking-wider text-[#39a1d6]">
+                    <span className="text-xs font-bold uppercase tracking-wider text-[#38bdf8]">
                       {photo.category}
                     </span>
-                    <h3 className="text-lg font-bold text-white leading-snug">{photo.title}</h3>
+                    <h3 className="text-base sm:text-lg font-bold text-white leading-snug">{photo.title}</h3>
                   </div>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export default function GalleryPreview() {
               e.preventDefault()
               document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
             }}
-            className="inline-flex items-center gap-2 rounded-full bg-[#0d55c8] px-8 py-3.5 text-sm font-bold text-white shadow-md shadow-[#0d55c8]/25 transition hover:bg-[#072b58] hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+            className="inline-flex items-center gap-2 rounded-full bg-[#1ea6dc] px-8 py-3.5 text-sm font-bold text-white shadow-md shadow-[#1ea6dc]/25 transition hover:bg-[#072b58] hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
           >
             <span>Discuss Your Project With Us</span>
             <ArrowRight className="h-4 w-4" />

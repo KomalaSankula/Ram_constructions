@@ -55,11 +55,11 @@ export default function CostCalculatorModal({ isOpen, onClose, onOpenQuote }: Co
       <div className="relative z-10 w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl bg-white p-6 shadow-2xl ring-1 ring-slate-200 md:p-8">
         <div className="flex items-center justify-between border-b border-slate-100 pb-4">
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#123d66] text-white">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#072b58] text-white">
               <Calculator className="h-5 w-5" />
             </div>
             <div>
-              <h3 className="text-xl font-black text-[#123d66]">Construction Cost Estimator</h3>
+              <h3 className="text-xl font-black text-[#072b58]">Construction Cost Estimator</h3>
               <p className="text-xs text-slate-500">Instant accurate estimate based on Telangana market rates</p>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function CostCalculatorModal({ isOpen, onClose, onOpenQuote }: Co
                 onClick={() => setProjectType('residential')}
                 className={`flex flex-col items-center justify-center gap-2 rounded-2xl p-3 text-sm font-semibold transition border ${
                   projectType === 'residential'
-                    ? 'border-[#1a6db2] bg-[#edfaff] text-[#1a6db2] ring-2 ring-[#1a6db2]/20'
+                    ? 'border-[#1ea6dc] bg-[#f0f9ff] text-[#1ea6dc] ring-2 ring-[#1ea6dc]/20'
                     : 'border-slate-200 bg-slate-50 text-slate-600 hover:bg-slate-100'
                 }`}
               >
@@ -96,7 +96,7 @@ export default function CostCalculatorModal({ isOpen, onClose, onOpenQuote }: Co
                 onClick={() => setProjectType('commercial')}
                 className={`flex flex-col items-center justify-center gap-2 rounded-2xl p-3 text-sm font-semibold transition border ${
                   projectType === 'commercial'
-                    ? 'border-[#1a6db2] bg-[#edfaff] text-[#1a6db2] ring-2 ring-[#1a6db2]/20'
+                    ? 'border-[#1ea6dc] bg-[#f0f9ff] text-[#1ea6dc] ring-2 ring-[#1ea6dc]/20'
                     : 'border-slate-200 bg-slate-50 text-slate-600 hover:bg-slate-100'
                 }`}
               >
@@ -109,7 +109,7 @@ export default function CostCalculatorModal({ isOpen, onClose, onOpenQuote }: Co
                 onClick={() => setProjectType('interior')}
                 className={`flex flex-col items-center justify-center gap-2 rounded-2xl p-3 text-sm font-semibold transition border ${
                   projectType === 'interior'
-                    ? 'border-[#1a6db2] bg-[#edfaff] text-[#1a6db2] ring-2 ring-[#1a6db2]/20'
+                    ? 'border-[#1ea6dc] bg-[#f0f9ff] text-[#1ea6dc] ring-2 ring-[#1ea6dc]/20'
                     : 'border-slate-200 bg-slate-50 text-slate-600 hover:bg-slate-100'
                 }`}
               >
@@ -124,7 +124,7 @@ export default function CostCalculatorModal({ isOpen, onClose, onOpenQuote }: Co
               <label className="text-xs font-bold uppercase tracking-wider text-slate-500">
                 2. Built-up Area
               </label>
-              <div className="flex items-center gap-1 rounded-xl bg-slate-100 px-3 py-1 text-sm font-bold text-[#123d66]">
+              <div className="flex items-center gap-1 rounded-xl bg-slate-100 px-3 py-1 text-sm font-bold text-[#072b58]">
                 <span>{areaSqFt.toLocaleString()}</span>
                 <span className="text-xs text-slate-500">sq.ft</span>
               </div>
@@ -136,7 +136,7 @@ export default function CostCalculatorModal({ isOpen, onClose, onOpenQuote }: Co
               step="100"
               value={areaSqFt}
               onChange={(e) => setAreaSqFt(Number(e.target.value))}
-              className="mt-3 w-full accent-[#1a6db2] cursor-pointer"
+              className="mt-3 w-full accent-[#1ea6dc] cursor-pointer"
             />
             <div className="flex justify-between text-[11px] text-slate-400">
               <span>500 sq.ft</span>
@@ -158,7 +158,7 @@ export default function CostCalculatorModal({ isOpen, onClose, onOpenQuote }: Co
                     onClick={() => setFloors(num)}
                     className={`flex-1 rounded-xl py-2 text-sm font-bold transition border ${
                       floors === num
-                        ? 'border-[#1a6db2] bg-[#1a6db2] text-white shadow-sm'
+                        ? 'border-[#1ea6dc] bg-[#1ea6dc] text-white shadow-sm'
                         : 'border-slate-200 bg-white text-slate-700 hover:bg-slate-50'
                     }`}
                   >
@@ -185,13 +185,13 @@ export default function CostCalculatorModal({ isOpen, onClose, onOpenQuote }: Co
                   onClick={() => setTier(t.id as 'standard' | 'premium' | 'luxury')}
                   className={`rounded-2xl p-3 text-left transition border ${
                     tier === t.id
-                      ? 'border-[#1a6db2] bg-[#edfaff] ring-2 ring-[#1a6db2]/20'
+                      ? 'border-[#1ea6dc] bg-[#f0f9ff] ring-2 ring-[#1ea6dc]/20'
                       : 'border-slate-200 bg-white hover:bg-slate-50'
                   }`}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-bold text-[#123d66]">{t.name}</span>
-                    {tier === t.id && <CheckCircle2 className="h-4 w-4 text-[#1a6db2]" />}
+                    <span className="text-sm font-bold text-[#072b58]">{t.name}</span>
+                    {tier === t.id && <CheckCircle2 className="h-4 w-4 text-[#1ea6dc]" />}
                   </div>
                   <p className="mt-1 text-[11px] text-slate-500 leading-snug">{t.desc}</p>
                 </button>
@@ -199,7 +199,7 @@ export default function CostCalculatorModal({ isOpen, onClose, onOpenQuote }: Co
             </div>
           </div>
 
-          <div className="rounded-2xl bg-gradient-to-br from-[#123d66] to-[#1a6db2] p-6 text-white shadow-lg">
+          <div className="rounded-2xl bg-gradient-to-br from-[#072b58] to-[#1ea6dc] p-6 text-white shadow-lg">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-b border-white/10 pb-4">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider text-[#8fe3ff]">
@@ -208,7 +208,7 @@ export default function CostCalculatorModal({ isOpen, onClose, onOpenQuote }: Co
                 <div className="text-3xl font-black tracking-tight text-white md:text-4xl">
                   {formatCurrency(rawTotal)}
                 </div>
-                <p className="text-xs text-[#edfaff] mt-1">
+                <p className="text-xs text-[#f0f9ff] mt-1">
                   ≈ ₹{rate.toLocaleString()} / sq.ft across {Math.round(totalBuiltUpArea).toLocaleString()} sq.ft
                 </p>
               </div>
@@ -251,7 +251,7 @@ export default function CostCalculatorModal({ isOpen, onClose, onOpenQuote }: Co
           <button
             type="button"
             onClick={handleApplyToQuote}
-            className="flex items-center justify-center gap-2 rounded-full bg-[#1a6db2] px-6 py-2.5 text-sm font-semibold text-white shadow-md shadow-[#1a6db2]/20 hover:bg-[#145290]"
+            className="flex items-center justify-center gap-2 rounded-full bg-[#1ea6dc] px-6 py-2.5 text-sm font-semibold text-white shadow-md shadow-[#1ea6dc]/20 hover:bg-[#072b58]"
           >
             <span>Lock Estimate & Request Consultation</span>
             <ArrowRight className="h-4 w-4" />

@@ -7,13 +7,13 @@ export default function TeamSection() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
-          <span className="text-xs font-extrabold uppercase tracking-[0.28em] text-[#0d55c8]">
+          <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#1ea6dc]">
             Meet the Experts
           </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[#072b58]">
+          <h2 className="mt-2.5 text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-[#072b58]">
             Our Team of Professionals
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-600">
+          <p className="mt-3 text-sm sm:text-base text-slate-600">
             Experienced civil engineers, architects, and site supervisors dedicated to structural integrity and safety.
           </p>
         </div>
@@ -22,7 +22,7 @@ export default function TeamSection() {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="group overflow-hidden rounded-[28px] bg-slate-50 p-6 shadow-card ring-1 ring-slate-200/80 transition-all duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-elevated hover:ring-[#0d55c8]/25 text-center"
+              className="group overflow-hidden rounded-[28px] bg-slate-50 p-6 shadow-card ring-1 ring-slate-200/80 transition-all duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-elevated hover:ring-[#1ea6dc]/30 text-center"
             >
               <div className="relative mx-auto h-48 w-48 overflow-hidden rounded-2xl bg-slate-100 ring-2 ring-slate-100">
                 <img
@@ -32,8 +32,8 @@ export default function TeamSection() {
                 />
               </div>
 
-              <h3 className="mt-5 text-lg font-bold text-[#072b58]">{member.name}</h3>
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#0d55c8] mt-0.5">
+              <h3 className="mt-4 text-base font-bold text-[#072b58]">{member.name}</h3>
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#1ea6dc] mt-0.5">
                 {member.role}
               </p>
 

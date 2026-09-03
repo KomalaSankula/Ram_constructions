@@ -18,13 +18,13 @@ export default function Button({
 }: ButtonProps) {
   const variantStyles = {
     primary:
-      'bg-[#0d55c8] text-white shadow-md shadow-[#0d55c8]/25 hover:bg-[#072b58] hover:shadow-lg active:scale-[0.98]',
+      'bg-[#1ea6dc] text-white shadow-md shadow-[#1ea6dc]/25 hover:bg-[#072b58] hover:shadow-lg active:scale-[0.98]',
     outline:
-      'border-2 border-[#072b58] bg-transparent text-[#072b58] hover:bg-[#edf5fd] active:scale-[0.98]',
+      'border-2 border-[#072b58] bg-transparent text-[#072b58] hover:bg-[#f0f9ff] active:scale-[0.98]',
     ghost:
-      'text-slate-600 hover:text-[#0d55c8] hover:bg-[#edf5fd] active:scale-[0.98]',
+      'text-slate-600 hover:text-[#1ea6dc] hover:bg-[#f0f9ff] active:scale-[0.98]',
     light:
-      'bg-white text-[#072b58] shadow-md hover:bg-[#edf5fd] active:scale-[0.98]',
+      'bg-white text-[#072b58] shadow-md hover:bg-[#f0f9ff] active:scale-[0.98]',
   }
 
   const sizeStyles = {

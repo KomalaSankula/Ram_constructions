@@ -20,15 +20,15 @@ export default {
         brand: {
           dark: '#072b58',
           navy: '#072b58',
-          primary: '#1a6db2',
-          overlay: 'rgb(26 109 178 / 50%)',
-          hover: '#043868',
-          sky: '#39a1d6',
-          accent: '#39a1d6',
-          lightBlue: '#edfaff',
+          primary: '#1ea6dc',
+          overlay: 'rgb(30 166 220 / 50%)',
+          hover: '#072b58',
+          sky: '#1ea6dc',
+          accent: '#1ea6dc',
+          lightBlue: '#f0f9ff',
           surface: '#ffffff',
         },
-        'brand-overlay': 'rgb(26 109 178 / 50%)',
+        'brand-overlay': 'rgb(30 166 220 / 50%)',
       },
       ringColor: {
         DEFAULT: '#1a6db2',
@@ -64,4 +64,3 @@ export default {
   },
   plugins: [],
 }
-

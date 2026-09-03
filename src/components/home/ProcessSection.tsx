@@ -1,10 +1,10 @@
 
 // Step 1 Icon: Two people with speech bubble (Consultation)
-function ConsultationIcon({ className = "h-14 w-14 text-[#0d55c8]" }: { className?: string }) {
+function ConsultationIcon({ className = "h-14 w-14 text-[#1ea6dc]" }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
       {/* Speech bubble */}
-      <path d="M26 14h12a6 6 0 0 1 6 6v4a6 6 0 0 1-6 6h-3l-5 4v-4h-4a6 6 0 0 1-6-6v-4a6 6 0 0 1 6-6z" fill="#edf5fd" />
+      <path d="M26 14h12a6 6 0 0 1 6 6v4a6 6 0 0 1-6 6h-3l-5 4v-4h-4a6 6 0 0 1-6-6v-4a6 6 0 0 1 6-6z" fill="#f0f9ff" />
       <circle cx="28" cy="22" r="1.5" fill="currentColor" />
       <circle cx="32" cy="22" r="1.5" fill="currentColor" />
       <circle cx="36" cy="22" r="1.5" fill="currentColor" />
@@ -19,25 +19,25 @@ function ConsultationIcon({ className = "h-14 w-14 text-[#0d55c8]" }: { classNam
 }
 
 // Step 2 Icon: Blueprint with house & drafting pencil (Planning)
-function PlanningIcon({ className = "h-14 w-14 text-[#0d55c8]" }: { className?: string }) {
+function PlanningIcon({ className = "h-14 w-14 text-[#1ea6dc]" }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
       {/* Blueprint Sheet */}
-      <rect x="14" y="16" width="36" height="36" rx="3" fill="#edf5fd" />
+      <rect x="14" y="16" width="36" height="36" rx="3" fill="#f0f9ff" />
       {/* House outline on blueprint */}
       <path d="M24 38v-8l8-6 8 6v8z" />
       <path d="M29 38v-5h6v5" />
       {/* Drafting ruler lines */}
       <path d="M14 22h4M14 28h3M14 34h4M14 40h3M14 46h4" />
       {/* Pencil drafting at top right */}
-      <path d="M42 12l8 8-16 16-8-8 16-16z" fill="#0d55c8" stroke="#072b58" />
+      <path d="M42 12l8 8-16 16-8-8 16-16z" fill="#1ea6dc" stroke="#072b58" />
       <path d="M26 28l-3 7 7-3" fill="#072b58" />
     </svg>
   )
 }
 
 // Step 3 Icon: Construction Tower Crane lifting block (Execution)
-function ExecutionIcon({ className = "h-14 w-14 text-[#0d55c8]" }: { className?: string }) {
+function ExecutionIcon({ className = "h-14 w-14 text-[#1ea6dc]" }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
       {/* Base */}
@@ -49,22 +49,22 @@ function ExecutionIcon({ className = "h-14 w-14 text-[#0d55c8]" }: { className?:
       {/* Jib / Horizontal Boom */}
       <path d="M14 20h38" />
       {/* Counterweight */}
-      <rect x="14" y="20" width="6" height="5" fill="#0d55c8" />
+      <rect x="14" y="20" width="6" height="5" fill="#1ea6dc" />
       {/* Trolley and cable */}
       <path d="M44 20v14" strokeDasharray="2 2" />
       {/* Suspended building block */}
-      <rect x="39" y="34" width="10" height="10" rx="1.5" fill="#edf5fd" />
+      <rect x="39" y="34" width="10" height="10" rx="1.5" fill="#f0f9ff" />
       <path d="M44 34v10" />
     </svg>
   )
 }
 
 // Step 4 Icon: Hand cradling a house (Handover)
-function HandoverIcon({ className = "h-14 w-14 text-[#0d55c8]" }: { className?: string }) {
+function HandoverIcon({ className = "h-14 w-14 text-[#1ea6dc]" }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
       {/* House floating above hand */}
-      <path d="M24 30v-8l8-7 8 7v8z" fill="#edf5fd" />
+      <path d="M24 30v-8l8-7 8 7v8z" fill="#f0f9ff" />
       <path d="M29 30v-5h6v5" />
       <path d="M37 18h3v4" />
       {/* Open supportive hand */}
@@ -112,15 +112,15 @@ export default function ProcessSection() {
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header Matching Website Theme */}
         <div className="text-center max-w-2xl mx-auto">
-          <span className="text-xs font-extrabold uppercase tracking-[0.28em] text-[#0d55c8]">
+          <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#1ea6dc]">
             OUR PROCESS
           </span>
 
-          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[#072b58]">
+          <h2 className="mt-2.5 text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-[#072b58]">
             Our Proven 4-Step Approach
           </h2>
 
-          <p className="mt-4 text-base sm:text-lg text-slate-600">
+          <p className="mt-3 text-sm sm:text-base text-slate-600">
             From concept to completion, we build with quality and deliver with trust.
           </p>
         </div>
@@ -133,24 +133,24 @@ export default function ProcessSection() {
               return (
                 <div key={item.step} className="relative h-full">
                   {/* Card Element */}
-                  <div className="group relative flex flex-col items-center text-center rounded-[28px] bg-white p-6 sm:p-7 pt-9 shadow-card ring-1 ring-slate-200/80 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-elevated hover:ring-[#0d55c8]/30 h-full">
+                  <div className="group relative flex flex-col items-center text-center rounded-[28px] bg-white p-6 sm:p-7 pt-9 shadow-card ring-1 ring-slate-200/80 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-elevated hover:ring-[#1ea6dc]/30 h-full">
                     {/* Top-Left Step Number Badge (01, 02, 03, 04) */}
-                    <div className="absolute -top-3.5 left-5 flex h-9 w-9 items-center justify-center rounded-full bg-[#0d55c8] text-white text-sm font-black shadow-md ring-2 ring-white">
+                    <div className="absolute -top-3.5 left-5 flex h-9 w-9 items-center justify-center rounded-full bg-[#1ea6dc] text-white text-sm font-black shadow-md ring-2 ring-white">
                       {item.step}
                     </div>
 
                     {/* Illustrated Circular Icon */}
-                    <div className="mx-auto mb-5 flex h-24 w-24 sm:h-26 sm:w-26 items-center justify-center rounded-full bg-[#edf5fd] ring-8 ring-[#edf5fd]/60 transition-transform duration-300 group-hover:scale-105">
-                      <StepIcon className="h-14 w-14 text-[#0d55c8]" />
+                    <div className="mx-auto mb-5 flex h-24 w-24 sm:h-26 sm:w-26 items-center justify-center rounded-full bg-[#f0f9ff] ring-8 ring-[#f0f9ff]/80 transition-transform duration-300 group-hover:scale-105">
+                      <StepIcon className="h-14 w-14 text-[#1ea6dc]" />
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-lg sm:text-xl font-black text-[#072b58]">
+                    <h3 className="text-base sm:text-lg font-bold text-[#072b58]">
                       {item.title}
                     </h3>
 
                     {/* Tagline in brand blue */}
-                    <p className="mt-1.5 text-xs sm:text-sm font-bold text-[#0d55c8]">
+                    <p className="mt-1.5 text-xs sm:text-sm font-bold text-[#1ea6dc]">
                       {item.tagline}
                     </p>
 
@@ -162,7 +162,7 @@ export default function ProcessSection() {
 
                   {/* Dotted Transition Arrow Connector (between cards on Desktop) */}
                   {idx < steps.length - 1 && (
-                    <div className="hidden lg:flex absolute -right-4 top-24 -translate-y-1/2 z-20 items-center justify-center text-[#0d55c8]/60 pointer-events-none w-8">
+                    <div className="hidden lg:flex absolute -right-4 top-24 -translate-y-1/2 z-20 items-center justify-center text-[#1ea6dc]/60 pointer-events-none w-8">
                       <span className="font-mono text-xs tracking-[0.15em] select-none font-bold">···&gt;</span>
                     </div>
                   )}

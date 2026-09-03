@@ -28,7 +28,7 @@ export default function About() {
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center relative z-10">
             {/* Left Column: Text Content */}
             <div>
-              <span className="text-xs font-extrabold uppercase tracking-[0.28em] text-[#0d55c8]">
+              <span className="text-xs font-extrabold uppercase tracking-[0.28em] text-[#1ea6dc]">
                 About RAM Construction
               </span>
               <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-black text-[#072b58] leading-tight">
@@ -57,7 +57,7 @@ export default function About() {
               <div className="mt-8 space-y-3">
                 {keyStrengths.map((point, index) => (
                   <div key={index} className="flex items-center gap-2.5 text-sm font-semibold text-slate-700">
-                    <CheckCircle2 className="h-4 w-4 text-[#0d55c8] shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-[#1ea6dc] shrink-0" />
                     <span>{point}</span>
                   </div>
                 ))}
@@ -66,7 +66,7 @@ export default function About() {
               <div className="mt-8">
                 <button
                   onClick={() => openQuote()}
-                  className="rounded-full bg-[#0d55c8] px-7 py-3 text-sm font-bold text-white shadow-md hover:bg-[#072b58] transition hover:scale-105"
+                  className="rounded-full bg-[#1ea6dc] px-7 py-3 text-sm font-bold text-white shadow-md hover:bg-[#072b58] transition hover:scale-105"
                 >
                   Partner With Us
                 </button>

@@ -1,6 +1,6 @@
 /* Blueprint dot pattern matching logo colors */
 .blueprint-dots {
-  background-image: radial-gradient(#1a6db2 1.2px, transparent 1.2px);
+  background-image: radial-gradient(#1ea6dc 1.2px, transparent 1.2px);
   background-size: 14px 14px;
   opacity: 0.15;
 }
@@ -31,14 +31,14 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #edfaff;
+  background: #f0f9ff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #123d66;
+  background: #072b58;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #0d55c8;
+  background: #1ea6dc;
 }
 
 /* Infinite Marquee Animation */

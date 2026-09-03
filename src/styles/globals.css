@@ -7,10 +7,10 @@
 :root {
   --brand-dark: #072b58;
   --brand-navy: #072b58;
-  --brand-primary: #1a6db2;
-  --brand-overlay: rgb(26 109 178 / 50%);
-  --brand-sky: #39a1d6;
-  --brand-accent: #39a1d6;
+  --brand-primary: #1ea6dc;
+  --brand-overlay: rgb(30 166 220 / 50%);
+  --brand-sky: #1ea6dc;
+  --brand-accent: #1ea6dc;
   --brand-surface: #ffffff;
 
   font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
@@ -20,8 +20,8 @@
 }
 
 ::selection {
-  background-color: rgb(26 109 178 / 50%);
-  color: #ffffff;
+  background-color: rgb(30 166 220 / 30%);
+  color: #072b58;
 }
 
 body {
@@ -51,6 +51,6 @@ a {
   }
 
   .site-section-soft {
-    @apply relative py-6 sm:py-8 md:py-9 bg-[#f8fafc];
+    @apply relative py-6 sm:py-8 md:py-9 bg-[#f4faff];
   }
 }

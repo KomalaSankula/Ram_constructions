@@ -11,8 +11,8 @@ export default function ConstructionBgPattern({
   opacity = 'opacity-[0.035]',
   inverted = false,
 }: ConstructionBgPatternProps) {
-  const strokeColor = inverted ? '#39a1d6' : '#072b58'
-  const secondaryColor = inverted ? '#39a1d6' : '#0d55c8'
+  const strokeColor = inverted ? '#1ea6dc' : '#072b58'
+  const secondaryColor = inverted ? '#38bdf8' : '#1ea6dc'
 
   return (
     <div
