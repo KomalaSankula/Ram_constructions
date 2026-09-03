@@ -116,17 +116,17 @@ export default function CounterSection() {
       <div className="pointer-events-none absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-[#1ea6dc]/20 blur-3xl" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-6 sm:gap-8 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-4">
           {counters.map((item) => {
             const Icon = item.icon
             return (
               <div
                 key={item.id}
-                className="group relative flex flex-col items-center text-center rounded-3xl bg-white/[0.06] p-6 sm:p-8 backdrop-blur-md ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1.5 hover:bg-white/[0.1] hover:ring-white/25 hover:shadow-2xl"
+                className="group relative flex flex-col items-center text-center rounded-2xl sm:rounded-3xl bg-white/[0.06] p-4 sm:p-6 lg:p-8 backdrop-blur-md ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1.5 hover:bg-white/[0.1] hover:ring-white/25 hover:shadow-2xl"
               >
                 {/* Glowing Icon Badge */}
-                <div className="mb-5 flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-white/10 ring-1 ring-white/20 text-[#1ea6dc] shadow-inner transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#1ea6dc] group-hover:text-white">
-                  <Icon className="h-7 w-7 sm:h-8 sm:w-8" />
+                <div className="mb-3 sm:mb-5 flex h-11 w-11 sm:h-14 sm:w-14 lg:h-16 lg:w-16 items-center justify-center rounded-2xl bg-white/10 ring-1 ring-white/20 text-[#1ea6dc] shadow-inner transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#1ea6dc] group-hover:text-white">
+                  <Icon className="h-5 w-5 sm:h-7 sm:w-7 lg:h-8 lg:w-8" />
                 </div>
 
                 {/* Animated Stat Value */}

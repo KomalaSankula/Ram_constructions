@@ -43,36 +43,36 @@ export default function HeroSection() {
   ]
 
   return (
-    <section id="home" className="relative bg-white pt-28 pb-6 sm:pt-32 md:pt-36 lg:pt-40 md:pb-8 overflow-hidden">
+    <section id="home" className="relative bg-white pt-24 pb-6 sm:pt-32 md:pt-36 lg:pt-40 md:pb-8 overflow-hidden">
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:gap-12 lg:grid-cols-[1.05fr_1.15fr] items-center">
           {/* Left Hero Content */}
           <div className="flex flex-col justify-center z-10">
             {/* Status Pill Tag */}
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#f0f9ff] border border-[#1ea6dc]/40 px-3.5 py-1 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-[#1ea6dc] mb-4 w-fit shadow-sm">
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#f0f9ff] border border-[#1ea6dc]/40 px-3.5 py-1 text-[11px] sm:text-xs font-bold uppercase tracking-[0.16em] text-[#1ea6dc] mb-4 w-fit shadow-sm">
               <span className="h-2 w-2 rounded-full bg-[#1ea6dc] animate-pulse" />
               <span>Premier Construction & Engineering</span>
             </div>
 
-            <h1 className="text-2xl sm:text-3xl lg:text-[2.5rem] font-black tracking-[-0.02em] leading-[1.22] text-[#072b58]">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] xl:text-[3.15rem] font-black tracking-[-0.025em] leading-[1.18] text-[#072b58]">
               Building <span className="text-[#1ea6dc]">Dreams,</span>
               <span className="block mt-1 sm:mt-1.5 text-[#072b58]">
                 Creating <span className="text-[#1ea6dc]">Tomorrow</span>
               </span>
             </h1>
 
-            <p className="mt-4 max-w-xl text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+            <p className="mt-4 max-w-xl text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed font-normal">
               Delivering benchmark architectural design, turnkey residential villas, and commercial landmarks across Telangana. Built with precision engineering, 100% Vastu compliance, and uncompromising structural integrity.
             </p>
 
-            <div className="mt-7 flex flex-wrap items-center gap-3.5 sm:gap-4">
+            <div className="mt-7 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
               <a
                 href="#projects"
                 onClick={(e) => {
                   e.preventDefault()
                   document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
                 }}
-                className="group inline-flex items-center gap-2 rounded-full bg-[#1ea6dc] px-6 sm:px-7 py-3 text-xs sm:text-sm font-bold text-white shadow-lg shadow-[#1ea6dc]/30 transition hover:bg-[#072b58] hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+                className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#1ea6dc] px-6 sm:px-7 py-3 sm:py-3.5 text-xs sm:text-sm font-bold text-white shadow-lg shadow-[#1ea6dc]/30 transition hover:bg-[#072b58] hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
               >
                 <span>Explore Projects</span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -84,7 +84,7 @@ export default function HeroSection() {
                   e.preventDefault()
                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
                 }}
-                className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-6 sm:px-7 py-3 text-xs sm:text-sm font-bold text-[#072b58] shadow-sm transition hover:border-[#1ea6dc] hover:bg-[#f0f9ff] hover:text-[#1ea6dc] active:scale-[0.98] cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-6 sm:px-7 py-3 sm:py-3.5 text-xs sm:text-sm font-bold text-[#072b58] shadow-sm transition hover:border-[#1ea6dc] hover:bg-[#f0f9ff] hover:text-[#1ea6dc] active:scale-[0.98] cursor-pointer"
               >
                 <span>Contact Us</span>
               </a>
@@ -107,7 +107,7 @@ export default function HeroSection() {
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Star key={i} className="h-3.5 w-3.5 fill-[#1ea6dc] text-[#1ea6dc]" />
                   ))}
-                  <span className="text-xs font-black text-[#072b58] ml-1">4.9 / 5.0</span>
+                  <span className="text-xs sm:text-sm font-black text-[#072b58] ml-1">4.9 / 5.0</span>
                 </div>
                 <p className="text-xs font-semibold text-slate-500 mt-0.5">
                   Trusted by <span className="text-[#072b58] font-bold">120+ Homeowners & Developers</span>
@@ -131,19 +131,19 @@ export default function HeroSection() {
                   <ShieldCheck className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-xs font-extrabold text-[#072b58] leading-tight">ISO 9001:2015</div>
-                  <div className="text-[10px] font-semibold text-slate-500">Certified Structural Safety</div>
+                  <div className="text-xs sm:text-sm font-extrabold text-[#072b58] leading-tight">ISO 9001:2015</div>
+                  <div className="text-[10px] sm:text-[11px] font-semibold text-slate-500">Certified Structural Safety</div>
                 </div>
               </div>
 
               {/* Floating Badge 2: Bottom-Left (Delivered Sites) */}
-              <div className="absolute -bottom-3 left-0 sm:left-4 animate-float [animation-delay:2s] z-20 flex items-center gap-3 rounded-2xl bg-white/95 px-4 py-3 shadow-xl backdrop-blur-md ring-1 ring-slate-200/80 transition-all hover:scale-105 select-none">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#f0f9ff] text-[#1ea6dc] ring-1 ring-[#1ea6dc]/25 shadow-sm">
-                  <Building2 className="h-5 w-5" />
+              <div className="absolute -bottom-2 left-2 sm:-bottom-3 sm:left-4 animate-float [animation-delay:2s] z-20 flex items-center gap-2.5 sm:gap-3 rounded-2xl bg-white/95 px-3.5 py-2.5 sm:px-4 sm:py-3 shadow-xl backdrop-blur-md ring-1 ring-slate-200/80 transition-all hover:scale-105 select-none">
+                <div className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-xl bg-[#f0f9ff] text-[#1ea6dc] ring-1 ring-[#1ea6dc]/25 shadow-sm">
+                  <Building2 className="h-4 w-4 sm:h-5 sm:w-5" />
                 </div>
                 <div>
-                  <div className="text-sm font-black text-[#072b58] leading-none">150+ Delivered</div>
-                  <div className="text-[10px] font-semibold text-slate-500 mt-1">Telangana Landmark Sites</div>
+                  <div className="text-xs sm:text-sm font-black text-[#072b58] leading-none">150+ Delivered</div>
+                  <div className="text-[10px] sm:text-[11px] font-semibold text-slate-500 mt-1">Telangana Landmark Sites</div>
                 </div>
               </div>
             </div>

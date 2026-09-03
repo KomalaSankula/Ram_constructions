@@ -52,7 +52,7 @@ export default function CostCalculatorModal({ isOpen, onClose, onOpenQuote }: Co
         onClick={onClose}
       />
 
-      <div className="relative z-10 w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl bg-white p-6 shadow-2xl ring-1 ring-slate-200 md:p-8">
+      <div className="relative z-10 w-full max-w-2xl max-h-[92vh] overflow-y-auto rounded-3xl bg-white p-4.5 sm:p-6 shadow-2xl ring-1 ring-slate-200 md:p-8">
         <div className="flex items-center justify-between border-b border-slate-100 pb-4">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#072b58] text-white">
@@ -156,13 +156,14 @@ export default function CostCalculatorModal({ isOpen, onClose, onOpenQuote }: Co
                     key={num}
                     type="button"
                     onClick={() => setFloors(num)}
-                    className={`flex-1 rounded-xl py-2 text-sm font-bold transition border ${
+                    className={`flex-1 rounded-xl py-2 px-1 text-xs sm:text-sm font-bold transition border ${
                       floors === num
                         ? 'border-[#1ea6dc] bg-[#1ea6dc] text-white shadow-sm'
                         : 'border-slate-200 bg-white text-slate-700 hover:bg-slate-50'
                     }`}
                   >
-                    G+{num - 1} ({num} {num === 1 ? 'Floor' : 'Floors'})
+                    <span>G+{num - 1}</span>
+                    <span className="hidden sm:inline text-xs font-normal"> ({num} Flr)</span>
                   </button>
                 ))}
               </div>

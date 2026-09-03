@@ -54,7 +54,7 @@ export default function QuoteModal({ isOpen, onClose, initialData }: QuoteModalP
         onClick={handleReset}
       />
 
-      <div className="relative z-10 w-full max-w-xl rounded-3xl bg-white p-6 shadow-2xl ring-1 ring-slate-200 md:p-8">
+      <div className="relative z-10 w-full max-w-xl max-h-[92vh] overflow-y-auto rounded-3xl bg-white p-5 shadow-2xl ring-1 ring-slate-200 sm:p-6 md:p-8">
         <div className="flex items-center justify-between border-b border-slate-100 pb-4">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-[#1ea6dc]">

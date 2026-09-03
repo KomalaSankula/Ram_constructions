@@ -27,7 +27,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="relative bg-[#051833] text-slate-300 pt-12 pb-10 overflow-hidden">
+    <footer className="relative bg-[#051833] text-slate-300 pt-12 pb-20 sm:pb-14 lg:pb-10 overflow-hidden">
       <ConstructionBgPattern variant="skyline" inverted opacity="opacity-[0.06]" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

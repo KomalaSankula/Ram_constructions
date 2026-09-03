@@ -53,4 +53,8 @@ a {
   .site-section-soft {
     @apply relative py-6 sm:py-8 md:py-9 bg-[#f4faff];
   }
+
+  .pb-safe {
+    padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+  }
 }

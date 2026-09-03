@@ -69,20 +69,20 @@ export default function WhyChooseUs() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
             </div>
 
-            <div className="mt-4 flex flex-wrap gap-3 sm:absolute sm:mt-0 sm:top-1/2 sm:-translate-y-1/2 sm:-right-4 lg:-right-6 sm:flex-col sm:gap-3.5 z-10">
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-1 gap-2.5 sm:gap-3.5 sm:absolute sm:mt-0 sm:top-1/2 sm:-translate-y-1/2 sm:-right-4 lg:-right-6 z-10">
               {whyChooseUsData.stats.map((stat, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-3.5 rounded-2xl bg-white/95 px-5 py-3.5 shadow-xl backdrop-blur-md ring-1 ring-slate-200/80 transition-all duration-300 hover:scale-105 hover:bg-white flex-1 min-w-[180px] sm:flex-initial"
+                  className="flex items-center gap-3 rounded-2xl bg-white/95 px-4 py-3 sm:px-5 sm:py-3.5 shadow-lg backdrop-blur-md ring-1 ring-slate-200/80 transition-all duration-300 hover:scale-105 hover:bg-white"
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#1ea6dc] text-white font-bold text-sm">
+                  <div className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-xl bg-[#1ea6dc] text-white font-bold text-sm">
                     {i === 0 ? '🏆' : i === 1 ? '⏱️' : '👷'}
                   </div>
                   <div>
-                    <div className="text-lg sm:text-xl font-bold text-[#072b58] leading-none">
+                    <div className="text-base sm:text-xl font-bold text-[#072b58] leading-none">
                       {stat.value}
                     </div>
-                    <div className="mt-1 text-[11px] font-semibold text-slate-600">
+                    <div className="mt-1 text-[10px] sm:text-[11px] font-semibold text-slate-600 leading-tight">
                       {stat.label}
                     </div>
                   </div>
